@@ -1,0 +1,60 @@
+a.btn-ro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  background: linear-gradient(
+    115deg,
+    rgba(110, 113, 110, 1),
+    rgba(50, 45, 55, 0.95) 50%
+  );
+  color: white;
+  font-size: 1.1em;
+  height: 2.2em;
+  border-radius: 0.2em;
+  text-transform: uppercase;
+  padding: 0 1.5rem;
+  cursor: pointer;
+  word-break: keep-all;
+  white-space: nowrap;
+  width: min-content;
+  text-decoration: none;
+}
+
+.btn-ro:hover {
+  background: linear-gradient(90deg, rgba(70, 70, 70, 1), rgba(30, 30, 30, 1));
+}
+
+.chips {
+  background-color: var(--first-color);
+  color: white;
+  border-radius: 1em;
+  padding: 0.35em 1em;
+  min-height: 32px;
+}
+
+select {
+  border: var(--first-color) 1px solid;
+  padding: 0.4em 1em;
+  text-align: center;
+  background-color: transparent;
+  color: var(--first-color);
+  border-radius: calc(var(--btn-radius) / 1.5);
+  width: min-content;
+  min-width: 130px;
+  max-height: 36px;
+}
+
+a:has(i) {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}
+
+a {
+  color: #333;
+}
+
+a:hover:not(.btn-ro, .chips) {
+  color: green;
+}
